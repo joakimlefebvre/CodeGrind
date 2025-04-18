@@ -55,7 +55,7 @@ class Solution2:
 
 if __name__ == '__main__':
     s = Solution2()
-    nums = [2,2,2,2,2]
+    nums = [2,2,1,2,2,1,0,0,4]
     target = 8
     res = s.fourSum(nums, target)
     print(res)
