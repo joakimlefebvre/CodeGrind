@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def calPoints(self, operations: List[str]) -> int:
         points = []
@@ -15,8 +16,7 @@ class Solution:
         return sum(points)
 
 
-
 if __name__ == '__main__':
     solution = Solution()
-    ops = ["1","C"]
+    ops = ["1", "C"]
     print(solution.calPoints(ops))

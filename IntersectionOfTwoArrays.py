@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
 
@@ -9,6 +10,7 @@ class Solution:
             return [x for x in set1 if x in set2]
         else:
             return [x for x in set2 if x in set1]
+
 
 if __name__ == '__main__':
     sol = Solution()
