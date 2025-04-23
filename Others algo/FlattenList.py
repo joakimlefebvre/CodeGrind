@@ -1,4 +1,4 @@
-class Solution():
+class Solution:
     def flatten(self, *args):
         newList = []
         for arg in args:

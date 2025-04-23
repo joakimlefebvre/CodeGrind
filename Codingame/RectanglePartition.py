@@ -1,4 +1,4 @@
-class Solution():
+class Solution:
     def rectanglePartition(self, x, y, mx, my):
         mx = mx + [0] + [x]
         my = my + [0] + [y]

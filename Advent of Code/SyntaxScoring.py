@@ -1,4 +1,4 @@
-class Solution():
+class Solution:
     def syntaxScoring(self, s):
         points = {')': 3, ']': 57, '}': 1197, '>': 25137}
         openCharacter = ['(', '[', '{', '<']

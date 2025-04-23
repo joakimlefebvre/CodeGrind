@@ -1,4 +1,4 @@
-class Solution():
+class Solution:
     def findInterval(self, intervals, points):
         numberOfPointsInInterval = [0] * (len(intervals) - 1)
         points.sort()
@@ -10,7 +10,7 @@ class Solution():
         return numberOfPointsInInterval
 
 
-class Solution2():
+class Solution2:
     def findInterval(self, intervals, points):
         numberOfPointsInInterval = [0] * (len(intervals) - 1)
         points.sort()

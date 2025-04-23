@@ -1,4 +1,4 @@
-class Solution():
+class Solution:
     def ipBetween(self, ip1, ip2):
         ip1, ip2 = ip1.split('.'), ip2.split('.')
         difference = 0

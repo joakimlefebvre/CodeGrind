@@ -1,4 +1,4 @@
-class Solution():
+class Solution:
     def getMaximumProfit(self, n, price, profit):
         maxProfit = 0
         for i in range(n):
@@ -14,7 +14,7 @@ class Solution():
         return maxProfit
 
 
-class Solution2():
+class Solution2:
     def getMaximumProfit(self, price, profit):
         n = len(price)
         left_max = [-1] * n

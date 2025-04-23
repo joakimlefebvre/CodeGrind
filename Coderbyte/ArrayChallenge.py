@@ -1,4 +1,4 @@
-class Solution():
+class Solution:
     def arrayChallenge(self, arr):
         arithmeticValue = arr[1]-arr[0]
         geometricValue = arr[1]/arr[0]

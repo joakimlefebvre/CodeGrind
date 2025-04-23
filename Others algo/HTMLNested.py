@@ -1,7 +1,7 @@
 import re
 
 
-class Solution():
+class Solution:
     def htmlVerification(self, html):
         htmlList = []
         i = 0

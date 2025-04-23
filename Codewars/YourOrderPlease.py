@@ -1,4 +1,4 @@
-class Solution():
+class Solution:
     def order(self, s):
         words = s.split()
         newS = [""] * len(words)

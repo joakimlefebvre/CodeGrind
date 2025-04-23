@@ -1,4 +1,4 @@
-class Solution():
+class Solution:
     def polymerization(self, polymer, rules, ite):
         polymer = [char for char in polymer]
         for _ in range(ite):
@@ -62,16 +62,16 @@ class Solution():
             if pair[0] not in nbLetter:
                 nbLetter[pair[0]] = 1 * pairs[pair]
             else:
-                nbLetter[pair[0]] += 1 * pairs[pair]
+                nbLetter[pair[0]] += pairs[pair]
 
-        if polymer[len(polymer)-1] not in nbLetter:
-            nbLetter[polymer[len(polymer)-1]] = 1
+        if polymer[-1] not in nbLetter:
+            nbLetter[polymer[-1]] = 1
         else:
-            nbLetter[polymer[len(polymer) - 1]] += 1
+            nbLetter[polymer[-1]] += 1
 
         nbLetter = list(nbLetter.values())
 
-        return max(nbLetter)-min(nbLetter)
+        return max(nbLetter) - min(nbLetter)
 
 
 if __name__ == "__main__":
@@ -79,6 +79,6 @@ if __name__ == "__main__":
              'HC': 'B', 'HN': 'C', 'NN': 'C', 'BH': 'H', 'NC': 'B',
              'NB': 'B', 'BN': 'B', 'BB': 'N', 'BC': 'B', 'CC': 'N', 'CN': 'C'}
     polymer = "NNCB"
-    ite = 40
+    ite = 10
     solution = Solution()
     print(solution.polymerization3(polymer, rules, ite))
